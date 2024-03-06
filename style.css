@@ -3,32 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background-color: antiquewhite;
 }
-
 .content {
   width: 1080px;
   min-height: 100vh;
-
-  background: white;
-
   margin: 85px auto;
   border-radius: 20px;
+  background: white;
+  padding-bottom: 100px;
 }
-
-.hrader {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 55px 60px;
+  border-bottom: 1px solid black;
 }
 
-.header__logo {
+.sneakers-card {
+  width: 210px;
+  height: 260px;
+  border: 5px solid black;
+  position: relative;
+  padding: 20px 30px;
+  border-radius: 40px;
+  box-shadow: 2px 2px 2px 2px rgb(162, 112, 112);
+}
+.sneakers__card-img {
+  width: 133px;
+  height: 112px;
+}
+.sneakers__card-like {
+  position: absolute;
+  background: none;
+  border: none;
+}
+.sneakers__card-title {
+  font-size: 14px;
+  margin: 14px 0px;
+}
+.sneakers-wrapper {
   display: flex;
-  align-items: center;
-  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .header__logo img {
@@ -74,13 +94,13 @@ body {
 }
 
 .sneakers__card-actions {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sneakers-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
 }

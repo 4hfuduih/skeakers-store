@@ -1,50 +1,71 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <div class="content">
-      <header class="header">
-        <div class="header__logo">
-          <img src="./img/Vector.png" alt="" />
-          <div class="header__logo-info">
-            <h3>Sneakers Store</h3>
-            <p>Магазин лучших кроссовок</p>
-          </div>
-        </div>
-
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li>
-              <img src="./img/Vector (1).png" alt="" />
-              <b>1206</b>
-            </li>
-            <li>
-              <img src="./img/Vector (2).png" alt="" />
-              <b>Закладки</b>
-            </li>
-            <li>
-              <img src="./img/image 4 (1).png" alt="" />
-              <b>Профиль</b>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <section>
-        <div class="sneakers-top">
-          <h2>Все крассовки</h2>
-          <div class="sneakers___top-input">
-            <img src="" alt="" />
-            <input type="text" placeholder="Поиск...." />
-          </div>
-        </div>
-        <div class="sneakers__wrapper"></div>
-      </section>
+        <header class="header">
+            <div class="header__logo">
+                <img src="./img/image 4 (1).png" alt="">
+                <div class="header__logo-info">
+                    <h3>Sneakers Store</h3>
+                    <p>Магазин лучших кроссовок</p>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li>
+                        <img src="./img/Vector.png" alt="">
+                        <b>1206 руб</b>
+                    </li>
+                    <li>
+                        <img src="./img/Vector (1).png" alt="">
+                        <b>Избранное</b>
+                    </li>
+                    <li>
+                        <img src="./img/Vector (2).png" alt="">
+                        <b>Профиль</b>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="sneakers">
+            <div class="sneakers-top">
+                <h2>Все кроссовки</h2>
+                <div class="sneakers__top-input">
+                    <img src="" alt="">
+                    <input type="text" placeholder="Поиск...">
+                </div>
+            </div>
+            <div class="sneakers-wrapper">                             
+ <div class="sneakers-card">
+    <button class="sneakers__card-like">
+      <img src="./img/images/like-1.svg" alt="" />
+    </button>
+    <img
+      src="./img/images/sneakers/sneakers-1.jpg"
+      alt=""
+      class="sneakers__card-img"
+    />
+    <h4 class="sneakers__card-title">
+      Мужские Кроссовки Nike Blazer Mid Suede
+    </h4>
+    <div class="sneakers__card-actions">
+      <div class="sneakers__action-price">
+        <p>Цена</p>
+        <b>1200$</b>
+      </div>
+      <button class="sneakers__actions-cart">
+        <img src="./images/plus.svg" alt="" />
+      </button>
     </div>
-    <script src="./index.js"></script>
-  </body>
+  </div>
+        </section>
+    </div>
+    <script src="/index.js"></script>
+</body>
 </html>
+
