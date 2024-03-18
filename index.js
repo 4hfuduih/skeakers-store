@@ -1,5 +1,3 @@
-fetch("https://8251bd1746791081.mokky.dev/favorites");
-
 function fetchData(api) {
   return fetch(api)
     .then((response) => response.json())
@@ -39,27 +37,6 @@ function renderSneakers(data) {
     .join("");
 }
 
-fetchData("https://eb69a78f009caf67.mokky.dev/sneakers").then((data) =>
-  renderSneakers(data)
-);
-
-let nameInput = document.getElementById("name");
-let btn = document.getElementById("submit");
-
-btn.addEventListener("click", function () {
-  let nameValue = nameInput.value;
-  return fetch("https://8251bd1746791081.mokky.dev/favorites", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ name: nameValue }),
-  })
-    .then((response) => response.json())
-    .then((json) => console.log(json))
-    .catch((err) => console.log(err));
-});
-
 document.addEventListener("click", function (event) {
   let target = event.target;
 
@@ -87,3 +64,27 @@ document.addEventListener("click", function (event) {
       );
   }
 });
+
+fetchData("https://eb69a78f009caf67.mokky.dev/sneakers").then((data) =>
+  renderSneakers(data)
+);
+
+
+
+
+// let nameInput = document.getElementById("name");
+// let btn = document.getElementById("submit");
+
+// btn.addEventListener("click", function () {
+//   let nameValue = nameInput.value;
+//   return fetch("https://8251bd1746791081.mokky.dev/favorites", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify({ name: nameValue }),
+//   })
+//     .then((response) => response.json())
+//     .then((json) => console.log(json))
+//     .catch((err) => console.log(err));
+// });
