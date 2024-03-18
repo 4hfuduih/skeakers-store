@@ -22,6 +22,15 @@ body {
   border-bottom: 1px solid black;
 }
 
+.header a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .sneakers-card {
   width: 210px;
   height: 260px;
